@@ -5,6 +5,8 @@ function distanceFromHqInBlocks (location, hq) {
 }
 
 function distanceFromHqInFeet () {
-  distanceFromHqInBlocks();
+  var ftDist = distanceFromHqInBlocks();
+  return ftDist * 264
   // calls distanceFromHqInBlocks from inside the distanceFromHqInFeet function
 }
+
